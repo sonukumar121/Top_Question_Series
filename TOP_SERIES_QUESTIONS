@@ -1,0 +1,38 @@
+GEEKS_FOR_GEEKS QUESTIONS FROM BASIC TO ADVANCED LEVEL AND AFTER THIS COMPLETION YOU HAVE TO SOLVE COMPANY LEVEL QUESTION.
+#include <stdio.h>
+
+int main() 
+{
+    int x,i,a[30],n;
+    printf("enter the number= ");
+    scanf("%d",&n);
+    
+    printf("enter the array elements= ");
+    for(i=1;i<=n-1;i++)
+    {
+            scanf("%d",&a[i]);
+
+    }
+   
+    
+    for(x=1;x<n;x++)
+    {
+        for(i=1;i<n;i++)//n=6 //6<6
+        {
+          if(x==a[i])
+          {
+              break;
+          }
+          else if()
+        {
+            printf("the missing elements is =%d",x);
+            break;
+        }
+        else
+        i++;
+        }
+       
+        
+        
+    }
+}
