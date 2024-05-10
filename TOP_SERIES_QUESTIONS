@@ -1,39 +1,35 @@
 GEEKS_FOR_GEEKS QUESTIONS FROM BASIC TO ADVANCED LEVEL AND AFTER THIS COMPLETION YOU HAVE TO SOLVE COMPANY LEVEL QUESTION.
 
-#include <stdio.h>
-
-int main() 
+#include<stdio.h>
+int main()
+//N = 10
+//A[] = {6,1,2,8,3,4,7,10,5}
 {
-    int x,i,a[30],n;
-    printf("enter the number= ");
+    int i,x,a[30],n;
+    printf("enter the size of no.of elements till=\n ");
     scanf("%d",&n);
-    
     printf("enter the array elements= ");
-    for(i=1;i<=n-1;i++)
+    for(i=1;i<n;i++)
     {
-            scanf("%d",&a[i]);
-
+        scanf("%d",&a[i]);  
     }
    
     
     for(x=1;x<n;x++)
     {
-        for(i=1;i<n;i++)//n=6 //6<6
+    for(i=1;i<n;i++)
+    {
+        if(x==a[i])
         {
-          if(x==a[i])
-          {
-              break;
-          }
-          else if()
-        {
-            printf("the missing elements is =%d",x);
             break;
         }
-        else
-        i++;
+        else if(i==9)
+        {
+            printf("the missing elements is= %d",x);
         }
-       
-        
-        
+        else
+        continue;
     }
+    }
+    
 }
