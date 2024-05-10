@@ -34,7 +34,7 @@ int main()
     }
 
 
-// repating elements .
+//REPEATING ELEMENTS.
 #include<stdio.h>
 
 int main() 
@@ -45,13 +45,14 @@ int main()
   {
      scanf("%d",&a[i]);
   }
-  for(x=0;x<=2;x++)
+  for(x=1;x<=3;x++)
   {
-    for(i=x;i<=2;i++)  
+    for(i=x;i<=3;i++)  
     {
       if(a[x]==a[i+1])
       {
-          printf("the repeating  elements is =%d",a[x]);
+          printf("the repeating  elements is =%d\n",a[x]);
+          break;
           
       }
       else
@@ -60,6 +61,3 @@ int main()
   }
 }
   
-    }
-    
-}
