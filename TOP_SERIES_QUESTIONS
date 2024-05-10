@@ -91,5 +91,65 @@ int main()
    printf("the biggest elements is= %d",c);
   
 }  
+
+
+
+// HIGHEST 1ST AND 2ND ELEMENTS IN ARRAYS.
+#include <stdio.h>
+
+int main() 
+{
+  int i,x,max,c,a[40],h,f,e;
+  printf("enter the array elemnsts= ");
+  for(i=1;i<=5;i++)
+  {
+     scanf("%d",&a[i]);  
+  }
+   max=a[1];
+   for(i=1;i<=5;i++)
+   {
+       if(max<a[i])
+       {
+           max=a[i];
+           c=max;
+       }
+       
+       else
+       i++;
+       
+   }
+   printf("the highest first  elements is= [%d]\n",c);
+   
+   
+   h=c; //h=5
+   f=a[1]; //f=1
+   for(i=1;i<=5;i++)
+   {
+  
+    if(f<a[i+1]) //
+   {
+        //f=100
+       if(f==h) //5==5
+       {
+         continue;  
+       }
+       f=a[i+1];//f=2
+       e=f; // 2
+       f=e;//2
+   }
+   
+   else
+   i++;
+   printf("the second highest elemnts is= [%d]\n",f);
+   break;
+  
+}  
+}
+ 
+ 
+ 
+ 
+ 
+ 
  
   
