@@ -60,4 +60,36 @@ int main()
     }
   }
 }
+
+
+
+
+// highest elemnts in given array.
+#include <stdio.h>
+
+int main() 
+{
+  int i,x,max,c,a[40];
+  printf("enter the array elemnsts= ");
+  for(i=1;i<=5;i++)
+  {
+     scanf("%d",&a[i]);  
+  }
+   max=a[1];
+   for(i=1;i<=5;i++)
+   {
+       if(max<a[i])
+       {
+           max=a[i];
+           c=max;
+       }
+       
+       else
+       i++;
+       
+   }
+   printf("the biggest elements is= %d",c);
+  
+}  
+ 
   
