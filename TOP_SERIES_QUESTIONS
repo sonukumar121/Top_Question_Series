@@ -186,24 +186,40 @@ for(x=1;x<=n-1;x++)
 }
 
 
-    
- 
- 
 
+// CHECK IF ARRAY IS SORTED OR NOT.
+#include<stdio.h>
+int main()
+{
+   int a[20],i,j,n;
+   
+   printf("enter the value of n= ");
+   scanf("%d",&n);
+      printf("enter the array elements= ");
 
+   for(i=1;i<=n;i++)
+   {
+    scanf("%d",&a[i]);   
+   }
+   for(i=1;i<=n-1;i++)
+   {
+       if(a[i]<a[i+1])
+       {
+           continue;
+       }
+       else
+       printf("array is not sorted\n");
+       break;
+   }
+   if(i==5)
+   {
+      printf("array is sorted ");   
+   }
+ 
+   
+   
+}
 
-    
-  
-    
- 
- 
- 
- 
-  
-
-    
- 
- 
 
 
 
