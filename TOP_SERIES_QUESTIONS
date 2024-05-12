@@ -221,6 +221,43 @@ int main()
 }
 
 
+#include<stdio.h>
+//Intersection of two arrays
+
+int main()
+{
+   int a[20],b[30],i,j,n;
+   printf("enter the array elements of a= ");
+   for(i=1;i<=5;i++)
+   {
+       scanf("%d",&a[i]);//1,2,3,4,5.
+   }
+   
+   printf("enetr the array elements of b=  ");
+   for(i=1;i<=3;i++)
+   {
+       scanf("%d",&b[i]); //1,2,4.
+   }
+   
+   for(j=1;j<=3;j++)
+   {
+       for(i=j;i<=j;i++)
+       {
+           if(a[i]=a[j])
+           {
+            printf("%d",a[i]);
+               break;
+           }
+       }
+
+   }
+
+  
+ 
+   
+   
+}
+
 
 
     
