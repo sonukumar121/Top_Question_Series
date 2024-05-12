@@ -148,16 +148,21 @@ int main()
 }
  
  //11-MAY==>SECOND DAY.
- 
+
+// COUNT PAIRS WITH GIVEN SUM.
   #include <stdio.h>
   int main()
   {
-  int a[30],i,c=0,x,n;
+  int a[30],i,c=0,x,n,k;
+  
+  printf("enter the value of k= ");
+  scanf("%d",&k);
+  
   printf("enter the value of n=  ");
   scanf("%d",&n);//n=4.
   
   printf("entr the arry elements= ");
-  for(i=1;i<=4;i++)
+  for(i=1;i<=n;i++)
   {
    scanf("%d",&a[i]);   
   }
@@ -166,19 +171,35 @@ int main()
 int f=0;
 for(x=1;x<=n-1;x++)
 {
-    for(i=1;i<=n-1;i++)
+    for(i=x;i<=n-1;i++)
     {
-      if(a[x]+a[i+1]==6)
+      if(a[x]+a[i+1]==k)
       {
-          c=c+1;//c=1
-          printf("%d",c);
-
+          f=f+1;//f=1
+         
+         
       }
      
     }
 }
+  printf("sum of pairs is =%d",f);
 }
 
+
+    
+ 
+ 
+
+
+
+    
+  
+    
+ 
+ 
+ 
+ 
+  
 
     
  
