@@ -1,6 +1,8 @@
 GEEKS_FOR_GEEKS QUESTIONS FROM BASIC TO ADVANCED LEVEL AND AFTER THIS COMPLETION YOU HAVE TO SOLVE COMPANY LEVEL QUESTION.
 // 10-MAY-2024.==>FIRST DAY.
 
+
+
 1>
  // MISSING  NUMBERS IN ARRAYS.
 #include<stdio.h>
@@ -35,6 +37,10 @@ int main()
     }
 
 
+
+
+
+
 //REPEATING ELEMENTS.
 #include<stdio.h>
 
@@ -61,6 +67,8 @@ int main()
     }
   }
 }
+
+
 
 
 
@@ -92,6 +100,9 @@ int main()
    printf("the biggest elements is= %d",c);
   
 }  
+
+
+
 
 
 
@@ -146,7 +157,12 @@ int main()
   
 }  
 }
- 
+
+
+
+
+
+
  //11-MAY==>SECOND DAY.
 
 // COUNT PAIRS WITH GIVEN SUM.
@@ -187,6 +203,10 @@ for(x=1;x<=n-1;x++)
 
 
 
+
+
+
+
 // CHECK IF ARRAY IS SORTED OR NOT.
 #include<stdio.h>
 int main()
@@ -221,6 +241,13 @@ int main()
 }
 
 
+
+
+
+
+
+
+
 #include<stdio.h>
 //Intersection of two arrays
 
@@ -251,11 +278,42 @@ int main()
        }
 
    }
+   
+}
 
-  
- 
-   
-   
+
+
+
+
+
+
+
+// FIND ELEMENTS WHICH OCCUR 'K' TIMES.
+#include<stdio.h>
+int main()
+{
+    int a[33],i,j,x,c=0;
+    printf("enter the array elements= ");
+    for(i=1;i<=7;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+
+   for(x=1;x<=5;x++)
+   {
+     for(i=x+1;i<=7;i++)
+     {
+         if(a[x]==a[i])
+         {
+             c=c+1;
+            break;
+         }
+         
+         else
+         i++;
+     }
+   }
+   printf("the no.of elements repeated is = %d",c);
 }
 
 
