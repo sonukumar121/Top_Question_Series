@@ -318,6 +318,47 @@ int main()
 
 
 
+
+
+//ALL ZEROES AT THE END OF THE ARRAY ELEMENTS OR SET OF NUMBERS.
+#include<stdio.h>
+int main()
+//Move all zeroes to end of the array elements.
+{
+  int a[20],i,n,x,c;
+  printf("enter the value of n= ");
+  scanf("%d",&n);
+  
+  printf("enetr the array elements= ");
+  for(i=1;i<=n;i++)
+  {
+     scanf("%d",&a[i]); //1,2,0,0,3,4 ==>1,2,4,0,3,0
+  }
+  
+for(x=0;x<=5;x++)
+{
+  for(i=1;i<=n;i++)
+  {
+    if(a[i]==0) // a[3]==0          a[4]==0
+  {
+     c=a[i]; //c=0
+     a[i]=a[n-x];// a[3]=a[6]==>a[3]=3
+     a[n]=c;// a[6]=0
+     break;
+     
+    
+  }
+  else
+  i++;
+}
+
+}
+for(i=1;i<=6;i++)
+{
+    printf(" %d",a[i]);
+}
+}
+   
     
   
     
