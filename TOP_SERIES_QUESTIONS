@@ -391,14 +391,51 @@ int main()
             
         }
         else
-        i++;  // ==>NOT DONE
+        i++;  
     }
     printf("%d",c);
     
 }
    
 
+
+
     
+////Find all pairs with a given sum
+#include<stdio.h>
+int main()
+{
+  int a[5],b[5],i,j,s,x;
+  //printf("enter the value of s= ");
+  //scanf("%d",&s);
+  printf("enter the elements of 1st array= ");
+  for(i=1;i<=5;i++)
+  {
+      scanf("%d",&a[i]);
+  }
+  printf("enter the elements of 2nd array= ");
+  for(i=1;i<=5;i++)
+  {
+    scanf("%d",&b[i]);   
+  }
+  
+  
+  for(x=1;x<=5;x++)
+  {
+      for(i=1;i<=5;i++)
+      {
+          if (a[x]+b[i]==9)
+         {
+              printf("(%d %d)",a[x],b[i]);
+         }
+          else
+          i++;
+      }
+      }
+  }
+        //NOT DONE
+  
+  
 
     
  
