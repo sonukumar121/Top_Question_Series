@@ -367,9 +367,7 @@ for(i=1;i<=6;i++)
 
 
 
-
-//
-//Count the Zeros.
+////Count the Zeros.
 #include<stdio.h>
 
 int main()
@@ -388,16 +386,22 @@ int main()
     {
         if(a[i]==0)
         {
-            //c=c+1;
-            printf("first time\n");
+            c=c+1;
+           
             
         }
         else
-        i++;   ==>NOT DONE
+        i++;  // ==>NOT DONE
     }
+    printf("%d",c);
     
 }
+   
+
     
+
+    
+ 
  
  
  
