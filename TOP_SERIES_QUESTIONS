@@ -470,6 +470,50 @@ int main()
 //Output: 45
 
     
+
+//// Online C compiler to run C program online
+#include <stdio.h>
+//find missing in second array.
+int main() 
+
+{
+  int a[30],b[40],i,j,n,x;
+  printf("enter the elements of 1st array= ");
+  for(i=1;i<=6;i++)
+  {
+      scanf("%d",&a[i]); //1,2,3,4,5,10
+  }
+    printf("enter the elements of 2nd array= ");
+
+  for(i=1;i<=5;i++)
+  {
+      scanf("%d",&b[i]); //2,3,1,0,5
+  }
+  
+  for(x=1;x<=6;x++)
+  {
+      for(i=1;i<=5;i++)
+      {
+          if(a[x]==b[i])
+          {
+           break;
+          }
+         
+      
+        else if(i==5)
+         {
+             printf("missing elements  in second array is = %d\n",a[x]);
+             break;
+         }
+         
+         else
+         i++;
+         
+        }
+     
+  }
+    
+}
  
  
  
