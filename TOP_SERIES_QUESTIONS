@@ -476,9 +476,11 @@ int main()
 
 
 
+
+
 //// Online C compiler to run C program online
 #include <stdio.h>
-//find missing in second array.
+//FIND MISSING NUMBERS IN SECOND ARRAY
 int main() 
 
 {
@@ -519,7 +521,51 @@ int main()
   }
     
 }
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  FIND INDEX OF A ARRAY OF A GIVEN SUM.
+#include <stdio.h>
+
+int main() 
+{
+    int sum,i,x,a[30];
+    printf("enetr the value of sum= ");
+    scanf("%d",&sum);
+  printf("enter the elements= ");
+  for(i=1;i<=5;i++)
+  {
+      scanf("%d",&a[i]); //1,2,3,4,5.
+  }
+  for(x=1;x<=5;x++)
+  {
+     for(i=2;i<=5;i++) 
+     {
+         if(a[x]+a[i]==sum)
+         {
+             printf("(the sum of these two elements is equal to  (%d,%d)",a[x],a[i]);
+             break;
+         }
+         else
+         i++;
+     }
+  }
+    
+}
+  
+   
  
  
  
