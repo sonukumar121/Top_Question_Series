@@ -706,7 +706,63 @@ int main()
 
   
                                          [ SDE SHEET ]  
- 
+
+
+// MISSING AND REPEATED ELEMENTS IN ARRAY.
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+   int a[20],b[30],i,j,n,x,m;
+   printf("enter the size of 1st array= ");
+   scanf("%d",&n);
+   printf("enter the elements= ");
+   for(i=1;i<=n;i++)
+   {
+       scanf("%d",&a[i]);
+   }
+   
+   printf("enter the elements of 2nd array= ");
+   scanf("%d",&m);
+     printf("enter the elements= ");
+     for(i=1;i<=m;i++)
+     {
+         scanf("%d",&b[i]);
+     }
+     
+     for(x=1;x<=m;x++) //m=3
+     {
+         for(i=1;i<=n;i++) //n=5
+         {
+            if(b[x]==a[i]) //b[3]==a[5]
+            {
+                break;
+            }
+            if(i==n && b[x]!=a[i])
+            {
+                printf("No 'b' is not a subset of 'a'\n");
+                break;
+            }
+            else
+            i++;
+         }
+         if(x==3)
+         {
+          printf("yes b is a subset of a\n");   
+          break;
+         }
+     }
+
+   
+   
+          
+          
+  
+}
+
+
+  
  
  
   
