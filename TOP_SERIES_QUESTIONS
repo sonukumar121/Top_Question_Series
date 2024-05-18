@@ -762,6 +762,48 @@ int main()
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+// equilibrium point.
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,x,ep,n;
+    printf("enter the size of array= ");
+    scanf("%d",&n);
+}
+
+printf("enter the array elements= ");
+for(i=1;i<=n;i++)
+{
+scanf("%d",&a[i]); //1,7,4,6,2
+}
+for(i=1;i<=n;i++)
+{
+    while()
+      {
+         if(a[3i-2]+a[3i-1]==a[3i+1]+a[3i+2]) //general formula.
+         {
+            printf("equilibrium point is=%d",a[3*i]); 
+         }
+         else
+         i++;
+      }
+      
+  }
+  }
+
+
+
   
  
  
