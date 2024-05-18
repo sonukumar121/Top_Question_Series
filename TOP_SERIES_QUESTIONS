@@ -637,6 +637,73 @@ int main()
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MISSING AND REPEATED ELEMENTS IN ARRAY.
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main()
+{
+    int n,i,a[30],j,x;
+    printf("enter the value of n= ");
+    scanf("%d",&n);
+    
+    printf("enetr the elements=  ");
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+    for(x=1;x<n;x++)
+    {
+        for(i=x+1;i<=n;i++)
+        {
+          if(a[x]==a[i])
+          {
+             printf("the repeated elemenst is = %d\n",a[x]); 
+             break;
+          }
+          else
+          i++;
+        }
+    }
+          
+          
+   for(x=1;x<n;x++)
+    {
+        for(i=x;i<=n;i++)
+        {
+          if(x==a[i])
+          {
+              break;
+          }
+          if(i==4)
+          {
+            printf("the missing elements is= %d\n",x);
+  
+          }
+          else
+          i++;
+          
+        }
+    }
+}
+
+
   
  
  
