@@ -804,7 +804,45 @@ for(i=1;i<=n;i++)
 
 
 
-  
+  #include<stdio.h>
+int main()
+{
+    int a[30],i,j,x,n,sum1=0,sum2=0,p,e,d,y;
+    printf("enter the elements= ");
+    for(i=1;i<=7;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+        for(y=2;y<=7;y++)
+        {
+          
+            for(x=2;x<=y;x++)
+           {
+            
+            for(p=1;p<x;p++)
+            {
+                sum1=sum1+a[p];
+            }
+            d=sum1;
+         }
+       
+        for(i=y+1;i<=7;i++)
+        {
+            sum2=sum2+a[i];
+        }
+        e=sum2;
+        
+
+        if(d==e)
+        {
+            printf("equilibrium point is = %d",a[x]);
+        }
+        else
+        y++;
+    }
+}
+
  
  
   
