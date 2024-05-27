@@ -815,4 +815,32 @@ int main()
 
  
  
-  
+
+
+//find kth smallest elements.
+#include <stdio.h>
+
+int main()
+{
+   int a[30],i,j,k,x,c;
+   
+   printf("enter the elements= ");
+   for(i=1;i<=6;i++)
+   {
+       scanf("%d",&a[i]); //7,10,4,3,20,15.
+   }
+   for(i=1;i<=5;i++)
+   {
+       if(a[i]>a[i+1])
+       {
+           c=a[i];
+           a[i]=a[i+1];
+           a[i+1]=c;
+       }
+       else
+       i++;
+   }
+   for(i=1;i<=6;i++)
+   printf(" %d ",a[i]);
+}
+   
