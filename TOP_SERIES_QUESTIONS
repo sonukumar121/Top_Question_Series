@@ -843,4 +843,49 @@ int main()
    for(i=1;i<=6;i++)
    printf(" %d ",a[i]);
 }                      NOT DONE
+
+
+
+
+
+
+
+
+
+// k=2,n=4;
+arr[]={1,5,8,10};
+output=5;
+the array can be modified as.
+{1+k,5-k,8-k,10-k}={3,3,6,8};
+
+the difference between largest and smallest number =8-3=5.
+
+
+#include<stdio.h>
+int main()
+{
+    int a[10],i,j,k,n;
+    printf("enter the  value of k= ");
+    scanf("%d",&k);
+    
+    printf("enter the value of n= ");
+    scanf("%d",&n);
+    
+    printf("enter the elements= ");
+    for(i=1;i<=4;i++)
+    {
+      scanf("%d",&a[i]);
+    }
+    k=a[k];
+    
+    for(i=1;i<=n;i++)
+    {
+      a[i]=a[i]-k;
+    }
+    for(i=1;i<=n;i++)
+    {
+      printf("%d",a[i]);
+    }
+    
+}
    
