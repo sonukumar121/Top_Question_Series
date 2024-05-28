@@ -889,3 +889,37 @@ int main()
     
 }
    
+
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+ int a[20],i,j,k,n,x;
+ printf("enter the value of k= ");
+ scanf("%d",&k);
+ 
+ printf("enter the value of n= ");
+ scanf("%d",&n);
+ 
+ printf("enter the elements= ");
+ for(i=1;i<=n;i++)
+ {
+ scanf("%d",&a[i]);
+ }
+ for(x=0;x<=n-1;x++)
+ {
+   for(i=x+1;i<=n;i++)
+   {
+     while(i<=i+2)
+     {
+       printf("%d",a[i]);
+     }
+    x++;
+   }
+ }
+}
+
