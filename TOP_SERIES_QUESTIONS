@@ -923,3 +923,52 @@ int main()
  }
 }                                  NOT DONE
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SEARCH IN A ROTATED ARRAYS.
+#include<stdio.h>
+int main()
+{
+  int a[20],i,j,x,n,key;
+  printf("enter the value of n= ");
+  scanf("%d",&n);
+
+ 
+
+  printf("enter the elements= ");
+  for(i=0;i<=n-1;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  
+   printf("enter the value of key= ");
+  scanf("%d",&key); //key=10
+
+  for(i=0;i<=n-1;i++)
+  {
+     if(a[i]==key)
+     {
+       printf("the elements at index=  %d",i);
+       break;
+     }
+     else
+     i++;
+  }
+
+
+
+}
+
