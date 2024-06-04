@@ -1046,3 +1046,93 @@ for(i=0;i<5;i++)
        printf(" %d ",a[i]);
    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q>>
+/*arr1[] = {2, 3, 6, 7, 9}
+arr2[] = {1, 4, 8, 10}
+k = 5
+Output:
+6
+Explanation:
+The final sorted array would be -
+1, 2, 3, 4, 6, 7, 8, 9, 10
+The 5th element of this array is 6.*/
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a[20],b[30],i,j,k,n,c;
+    printf("enter the elements of 1st array= ");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&a[i]);//2,3,6,7,9.
+    }
+    
+     printf("enter the elements of 2nd array= ");
+    for(i=0;i<4;i++)
+    {
+        scanf("%d",&b[i]);//1,4,8,10
+    }
+    
+    for(i=0;i<5;i++)
+    {
+        for(j=0;j<4;j++)
+        {
+            if(a[i]>b[j])
+            {
+                c=a[i];
+                a[i]=b[j];
+                b[j]=c;
+            }
+        }
+    }
+    for(i=0;i<5;i++)
+    {
+        printf(" %d ",a[i]);
+    }
+    
+    for(i=0;i<4;i++)
+    {
+        for(j=i+1;j<4;j++)
+        {
+            if(b[i]>b[j])
+            {
+                c=b[i];
+                b[i]=b[j];
+                b[j]=c;
+            }
+        }
+    }
+    
+    
+    for(j=0;j<4;j++)
+    {
+        printf(" %d ",b[j]);
+    }
+    
+    printf("enter your choice of nth smallest elements= ");
+    scanf("%d",&n);
+    t=
+}
