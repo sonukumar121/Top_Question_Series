@@ -1177,3 +1177,54 @@ int main()
        }
    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Input : 
+// ARRAY SUM DIVISIBALITY ORDER.
+nums = [9, 5, 7, 3]
+k = 6
+Output: 
+True
+Explanation: 
+{(9, 3), (5, 7)} is a 
+possible solution. 9 + 3 = 12 is divisible
+by 6 and 7 + 5 = 12 is also divisible by 6.*/
+
+#include<stdio.h>
+int main()
+{
+    int a[30],i,j,x,n,sum,key;
+    printf("enter the elments= ");
+    for(i=0;i<4;i++)
+    {
+        scanf("%d",&a[i]);//9,5,7,3.
+    }
+    
+    printf("enter the value of key= ");
+    scanf("%d",&key); //key=6.
+    
+    for(x=0;x<3;x++)
+    {
+        for(i=x+1;i<4;i++)
+        {
+           sum=a[x]+a[i]; 
+           if(sum%key==0)
+           {
+               printf("{(%d,%d)} ",a[x],a[i]);
+           }
+        }
+    }
+    
+}
