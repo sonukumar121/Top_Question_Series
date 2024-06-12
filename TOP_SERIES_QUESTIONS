@@ -1285,3 +1285,47 @@ int main()
 printf("the second largest elements is= %d",smax);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+//ZEROES TO END.
+
+
+#include<stdio.h>
+//Find missing number in an array.
+int main()
+{
+    int a[20],i,j,k,x,n,c;
+    printf("enter the no of value which you enter= ");
+    scanf("%d",&n);
+    printf("enter the elements= ");
+    
+    for(i=1;i<=n-1;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+    for(i=1;i<=n-1;i++)
+    {
+        if(a[i+1]-a[i]==1)
+        {
+            continue;
+        }
+        else
+        c=(a[i]+1);
+        break;
+        
+        
+    }
+    printf("missing number is= %d",c);
+    
+    
+}
