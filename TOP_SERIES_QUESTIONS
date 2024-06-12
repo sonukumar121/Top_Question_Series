@@ -1228,3 +1228,60 @@ int main()
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//SECOND LARGEST ELEMENTS WITHOUT SORTING.
+
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n,max,t,smax;
+    printf("enter the elements= ");
+    for(i=0;i<=4;i++)
+    {
+        scanf("%d",&a[i]); // 8,9,4,0,1;
+    }
+    max=a[0];
+    for(i=0;i<=4;i++)
+    {
+        if(max<a[i])
+        {
+            max=a[i]; //max=9
+            
+        }
+        
+    }
+    printf("the largest 1st elements is= %d\n",max);
+    t=max;
+  
+    smax=a[0];
+   for(i=0;i<=4;i++)
+   
+{   
+    if(a[i]!=t)
+    {
+        if(smax<a[i])
+        {
+           smax=a[i]; 
+        }
+        
+    }
+    
+}
+printf("the second largest elements is= %d",smax);
+}
+
