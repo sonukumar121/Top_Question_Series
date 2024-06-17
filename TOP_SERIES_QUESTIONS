@@ -1427,3 +1427,42 @@ int main()
 }
 
 // NOT DONE
+
+
+
+
+
+
+
+
+
+
+
+
+//Find the Majority Element that occurs more than N/2.
+#include<stdio.h>
+
+int main()
+{
+    int a[20],i,j,k,x,n,t,p;
+    printf("enter the elements= ");
+    for(i=1;i<=7;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+    for(i=1;i<=7;i++)
+    
+    {
+        if(a[x]==a[i])
+        {
+            p=p+1;
+            t=p;
+            printf("%d",t);
+        }
+        else
+        x=i;
+        i=x+1;
+    }
+    
+}
