@@ -1528,3 +1528,51 @@ int main()
   
    
    }  //NOT  DONE.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+int main ()
+{
+    int a[20],i,j,k,x,n;
+    printf("enter the elements= ");
+    for(i=1;i<=5;i++)
+    {
+    scanf("%d",&a[i]); //4,1,2,1,2.
+    }
+    
+    for(x=1;x<=5;x++)
+    {
+        for(i=x+1;i<=5;i++)
+        {
+            if(a[x]==a[i])
+            {
+                
+                break;
+            }
+            else if(i==5)
+            {
+                printf("the once elements is= %d\n",a[x]);
+            }
+            else
+            i++;
+        }
+    }
+}
