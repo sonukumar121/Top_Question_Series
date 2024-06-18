@@ -1576,3 +1576,53 @@ int main ()
         }
     }
 }
+
+
+
+
+
+
+
+// TWO SUM PROBLEMS.
+
+#include<stdio.h>
+int main()
+{
+  int a[20],i,j,k,x,n,target;
+  {
+      printf("enter the elemnets= ");
+      for(i=1;i<=5;i++)
+      {
+          scanf("%d",&a[i]);
+      }
+      
+      
+      printf("enter your target= ");
+      {
+       scanf("%d",&target);
+      }
+      
+      
+      for(x=1;x<=5;x++)
+      {
+          for(i=x+1;i<=5;i++)
+          {
+              if(a[x]+a[i]==target)
+              {
+                  printf("(%d %d)",a[x],a[i]);
+              }
+              
+          }
+      }
+      
+    
+  }
+  
+}
+
+
+
+
+
+
+
