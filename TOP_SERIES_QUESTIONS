@@ -1658,3 +1658,51 @@ int main()
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n,amax,t,s,max;
+    printf("enter the value  of  n= ");
+    scanf("%d",&n);
+    printf("enter the elemnts= ");
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=1;i<=n;i++)
+    {
+      if(amax<a[i])
+      {
+          amax=a[i];
+          t=i+1;
+      }
+    }
+    printf("the first = %d\n",amax);
+  
+    s=t;
+    max=a[s];
+    for(t=s;t<=n;t++)
+    {
+       if(max<a[t])
+      {
+          max=a[t];
+          t=t;
+      } 
+    }
+    printf("the second= %d",max);
+    t=i+1;
+    s=t;
+    
+}
