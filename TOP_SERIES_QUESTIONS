@@ -1705,4 +1705,4 @@ int main()
     t=i+1;
     s=t;
     
-}
+}   // not done 95% done.
