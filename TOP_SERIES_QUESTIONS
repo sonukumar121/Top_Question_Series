@@ -1626,3 +1626,35 @@ int main()
 
 
 
+
+
+
+
+
+
+
+/*Input: N = 7, array[] = {1,2,3,4,5,6,7} , k=2 , right
+Output: 6 7 1 2 3 4 5*/
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n;
+    printf("enter the elements= ");
+    for(i=1;i<=n;i++)
+    {
+        if(i==n)
+        {
+            imax=n;
+        }
+        scanf("%d",&a[i]);
+    }
+    
+    printf("enter the value of k= ");
+    scanf("%d",&k);
+    
+    for(k=imax-k;k<=n;k++) //k=2; imax=7.
+    {
+        
+    }
+}
+
