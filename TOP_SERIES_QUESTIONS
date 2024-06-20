@@ -1706,3 +1706,39 @@ int main()
     s=t;
     
 }   // not done 95% done.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//REVERSE ANY NUMBER (OWN ALGORITHM);
+
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n,r,p,s;
+    printf("enter the value of x= ");
+    scanf("%d",&x);
+    
+    printf("enter the elements= ");
+    scanf("%d",&n); //1234==>4321
+    
+    for(i=1;i<=x;i++)
+    {
+       r=n%10; //
+       n=n/10;
+       printf("%d",r);
+    }
+}
+   
