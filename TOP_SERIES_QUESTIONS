@@ -1780,4 +1780,41 @@ int main()
     else
     printf("not a palindrome number");
 }*/
-   
+
+
+
+
+
+
+
+
+
+
+
+
+//function (factorial)
+#include<stdio.h>
+int fact(int x); //fn declare.
+void main()
+{
+    int c,n;
+    printf("enter the number= ");
+    scanf("%d",&n);
+    c=fact(n); //fn calling.
+    printf("%d",c);
+
+}
+int fact(int x)
+{
+    int n;
+    if(x==1)
+    {
+      return 1;
+    }
+    else
+    return x*fact(x-1);//fn   
+    
+    
+ 
+    
+}
