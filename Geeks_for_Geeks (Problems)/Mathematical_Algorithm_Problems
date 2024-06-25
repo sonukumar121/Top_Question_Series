@@ -65,3 +65,80 @@ int main()
     printf("repeated %d time",c);
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*N = 6
+Output:
+1 
+Explanation:
+Factors of 6 are 1, 2, 3 and 6.
+Excluding 6 their sum is 6 which
+is equal to N itself. So, it's a
+Perfect Number.*/
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n,sum=0,c;
+    printf("enter the number= ");
+    scanf("%d",&n);
+    
+    for(j=1;j<=10;j++)
+    {
+      if(n%j==0)
+      {
+          for(i=j+1;i<=j+1;i++)
+          {
+              if(j==n)
+              {
+                  break;
+              }
+             printf("%d,",i);
+             a[i]=i;
+          }
+         
+         
+          
+      }
+      
+    }
+    for(i=j+1;i<=n;i++)
+    {
+        sum=sum+a[i];
+      printf("%d",a[i]); 
+      
+    }
+    printf("%d",sum);
+    c=sum;
+    if(c==n);
+    {
+        printf("perfect number");
+    }
+    
+    printf("not a perfect number");
+}
+
+ //NOT DONE
+
+
+
+
+
+
