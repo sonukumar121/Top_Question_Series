@@ -14,3 +14,54 @@ int main()
     }
     printf("%d",c);
 }
+
+
+
+
+
+
+
+// Intersection of two arrays.
+
+#include<stdio.h>
+int main()
+{
+    int a[29],b[20],i,j,k,x,n1,n2,c=0;
+    printf("enter the value of n1= ");
+    {
+        scanf("%d",&n1);
+    }
+    
+    printf("enter the elements of first array= ");
+    {
+        for(i=1;i<=n1;i++)
+        {
+            scanf("%d",&a[i]);
+        }
+        
+    }
+    
+    printf("enter the value of n2= ");
+    {
+        scanf("%d",&n2);
+    }
+    
+    printf("enter the elements of second array= ");
+    {
+        for(i=1;i<=n2;i++)
+        {
+          scanf("%d",&b[i]);  
+        }
+        
+    }
+    
+    for(i=1;i<=5;i++)
+    {
+        if(a[i]==b[i])
+        {
+            c=c+1;
+        }
+    }
+    printf("repeated %d time",c);
+    
+}
