@@ -142,3 +142,52 @@ int main()
 
 
 
+
+
+
+
+
+// ARMSTRONG NUMBER.
+#include<stdio.h>
+int main()
+{
+    int a[20],i,r,sum=0,n,k,c=0,s,p;
+    
+    printf("enter the no.of digits= ");
+    scanf("%d",&k);//k=3
+    
+    printf("enter the number= ");
+    scanf("%d",&n);//n=153
+    p=n;
+
+for(i=1;i<=k;i++)
+{
+    r=n%10;
+    if(r==0)
+    {
+        a[i]=k;
+        break;
+    }
+    
+    a[i]=r;
+    n=n/10;
+}
+for(i=1;i<=k;i++)
+{
+    c=c+a[i]*a[i]*a[i];
+    
+
+    
+   
+}
+printf("%d",c);
+s=c;
+if(s==p)
+{
+    printf(" armstrong number");
+}
+else
+printf("not an armstrong number");
+}
+
+
