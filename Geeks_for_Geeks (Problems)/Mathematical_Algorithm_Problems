@@ -199,8 +199,6 @@ printf("not an armstrong number");
 
 
 
-
-
 //M,N ROOT OF NUMBERS.
 
 #include<stdio.h>
@@ -233,7 +231,13 @@ int main()
     scanf("%d",&n);//n=2;
     for(i=1;i<=9;i++)
     {
-        c=b[i]*a[i];
+        if(n==2)
+        {
+           c=a[i]*a[i];   
+        }
+       else
+        c=a[i]*a[i]*a[i];
+      
         if(m==c)
     {
         printf("%d",a[i]);
