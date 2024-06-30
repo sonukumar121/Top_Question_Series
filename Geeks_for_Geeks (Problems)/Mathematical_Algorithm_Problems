@@ -244,6 +244,56 @@ int main()
         break;
     }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// GREATEST PRIME NUMBER.
+#include<stdio.h>
+int main()
+{
+  int a[20],i=1,j,x,n,k=1;
+  printf("enter the number= ");
+  scanf("%d",&n);//n=24
+  
+  printf("the factor of this number is= ");
+  for(i=1;i<=24;i++)
+  {
+      if(n%i==0)
+      {
+          a[k]=i;
+          printf("%d",i);
+          k=k+1;
+      }
+  }
+  while(a[i]>0)
+  {
+      if(a[i]==2)
+      
+      {
+        printf("%d",a[i]);     
+      }
+      else if(a[i]%2!=0 && a[i]%1==0)
+      {
+          printf("%d",a[i]);
+      }
+   
+  }
+  
+  
+}
    
    
 }    // NOT DONE
