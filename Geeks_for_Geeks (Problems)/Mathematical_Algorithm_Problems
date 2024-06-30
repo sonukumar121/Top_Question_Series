@@ -297,3 +297,45 @@ int main()
    
    
 }    // NOT DONE
+
+
+
+
+
+
+
+
+
+
+
+//Nth Natural Number.
+
+#include<stdio.h>
+int main()
+{
+    int a[20],i,j,k,x,n;
+    printf("enter the elements= ");
+    scanf("%d",&n);//
+
+
+for(i=1;i<=n+1;i++)
+{
+   if(i==9) 
+   {
+      
+      continue;
+   } 
+   
+   printf("%d",i);
+}
+
+}
+
+
+
+
+
+
+
+
+
